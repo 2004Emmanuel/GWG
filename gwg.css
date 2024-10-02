@@ -6,9 +6,10 @@
 }
 body {
   user-select: none;
-  background-color: rgb(7, 7, 17);
+  /* background-color: rgb(7, 7, 17); */
+  background-color: #fff;
   font-family: cursive;
-  color: aliceblue;
+  color: #000;
 }
 nav {
   position: relative;
@@ -43,10 +44,9 @@ nav {
   margin-left: 20px;
 }
 .navLinks li a {
-  color: aliceblue;
+  color: #000;
   text-decoration: none;
   font-size: 30px;
-  /* background-color: aliceblue; */
 
   padding: 10px;
   border-radius: 10px;
@@ -69,21 +69,22 @@ section {
 }
 
 #banner .row {
+  position: relative;
   width: 100%;
-  flex-direction: row;
   justify-content: space-between;
-  align-items: center;
   display: flex;
 }
 #banner .row .col5 {
+  position: relative;
   width: 48%;
-  margin: 25px;
+  text-align: center;
 }
 #banner .row .col5 h2 {
   font-size: 3em;
   text-align: center;
-  color: blueviolet;
+  color: #000;
   letter-spacing: 10px;
+  margin-bottom: 20px;
   animation: animate 5s linear infinite;
   /*-webkit-box-reflect: above 1px linear-gradient(transparent, blueviolet);
   */
@@ -100,7 +101,7 @@ section {
   80%,
   90.1%,
   92% {
-    color: blueviolet;
+    color: #000;
     text-shadow: none;
   }
   18.1%,
@@ -114,17 +115,19 @@ section {
   92.1%,
   100% {
     color: #fff;
-    text-shadow: 0 0 10px rgb(98, 48, 145), 0 0 20px rgb(98, 48, 145),
-      0 0 40px rgb(98, 48, 145), 0 0 80px rgb(98, 48, 145),
-      0 0 160px rgb(98, 48, 145);
+    text-shadow: 0 0 10px rgb(17, 16, 19), 0 0 20px rgb(22, 22, 23),
+      0 0 40px rgb(22, 21, 22), 0 0 80px rgb(98, 48, 145),
+      0 0 160px rgb(18, 18, 19);
   }
 }
 #banner .row .col5 p {
-  text-align: justify;
+  text-align: center;
+  font-family: sans-serif;
 }
 .col5 .imgBx {
-  max-width: 100%;
+  position: relative;
   height: 450px;
+  width: 100%;
 }
 .col5 .imgBx img {
   width: 100%;
@@ -223,12 +226,20 @@ section {
   flex: 1 0 100%;
   object-fit: cover;
 } */
+#banner .row .col5 a {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+}
 #banner .btn {
-  padding: 10px;
-  width: 100%;
-  margin: 20px;
+  margin-top: 20px;
+  padding: 7px 20px;
+  letter-spacing: 2px;
+  justify-content: center;
+  align-items: center;
   color: aliceblue;
-  background-color: blueviolet;
+  background-color: rgb(28, 28, 29);
 }
 #banner .btn:hover {
   background-color: aliceblue;
@@ -240,28 +251,36 @@ section {
   -o-transition: 0.8s ease-in-out;
 }
 #collection {
-  align-items: center;
-  box-shadow: 0px 5px 15px #8a2be2;
+  box-shadow: 0px 1px 5px #000;
 }
 #collection .pinky {
   text-align: center;
   font-size: 4em;
-  /* box-shadow: 0px 5px 15px #8a2be2; */
 }
 #collection .collectan {
+  display: flex;
   margin-top: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 #collection .collectan .collecBx {
   width: 100%;
-  margin: 70px 30px;
-  align-items: center;
   display: flex;
+  align-items: center;
+  margin-top: 20px;
 }
 .pcak {
-  width: 48%;
+  margin: 20px;
+  text-align: center;
+}
+.pcak2 {
+  border: 1px solid#000;
+  padding: 10px;
 }
 .pcak2 h2 {
   text-align: center;
+  font-family: sans-serif;
 }
 .thecker {
   text-align: center;
@@ -270,7 +289,7 @@ section {
   color: #fff;
 }
 .thecker a:hover {
-  color: #8a2be2;
+  color: #000;
 }
 .thecker a img {
   margin-top: 20px;
@@ -290,12 +309,13 @@ section {
 #collection .collectan .collecBx p {
   margin-top: 20px;
   text-align: center;
-  background-color: rgba(41, 0, 80, 0.365);
-  /* box-shadow: 0px 5px 15px #8a2be2; */
+  /* background-color: rgba(41, 0, 80, 0.365); */
+  /* border: 1px solid #000; */
+  font-family: sans-serif;
 }
 #collection .collectan .collecBx .imgBx {
-  width: 250px;
-  height: 250px;
+  width: 180px;
+  height: 180px;
 }
 #collection .collectan .collecBx .imgBx img {
   box-shadow: -3px -5px 25px;
@@ -311,6 +331,11 @@ section {
 
 #gall {
   padding: 2rem;
+}
+#gall h2 {
+  text-align: center;
+  font-size: 4em;
+  margin-bottom: 30px;
 }
 .slider-wrapper {
   position: relative;
@@ -369,7 +394,7 @@ section {
 }
 
 #partnership {
-  box-shadow: 0px 5px 15px #8a2be2;
+  box-shadow: 0px 1px 5px #000;
 }
 #partnership .party {
   display: flex;
@@ -394,71 +419,84 @@ section {
   -o-border-radius: 50%;
   box-shadow: 20px 50px 150px rgb(30, 30, 200, 0.3);
 }
-#team .cony {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: center;
-}
-#team .cony .conyBx {
-  max-width: 300px;
-  margin: 20px;
-  border: 1px solid #ffff;
+#team {
+  box-shadow: 0px 1px 5px #000;
   padding: 20px;
 }
-#team .cony .conyBx .imgBx {
-  position: relative;
-  width: 100px;
-  height: 100px;
-  margin: 20px;
+
+#team h2 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 20px;
 }
-#team .cony .conyBx .textBx h3 {
-  margin: 10px;
-  border: 1px solid #892be287;
-  width: fit-content;
-  padding: 8px 10px;
-  border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px;
+
+#team .cony {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#team .cony .conyBx {
+  max-width: 90%;
+  margin: 20px;
+  border: 1px solid #000;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#team .cony .conyBx .imgBx {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 150px;
+  height: 150px; /* Adjusted for mobile */
 }
 
 #team .cony .conyBx .imgBx img {
   border-radius: 50%;
   width: 100%;
   height: 100%;
-  top: 0;
-  left: 0;
   object-fit: cover;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+}
+
+#team .cony .conyBx .textBx h3 {
+  text-align: center;
+  font-family: sans-serif;
+  border: 1px solid #000;
+  padding: 8px 10px;
+  border-radius: 50px;
+}
+
+#team .cony .conyBx p {
+  font-family: sans-serif;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 1em;
 }
 
 #team .cony .conyBx a i {
-  border: 1px solid #fff;
+  display: inline-block;
+  border: 1px solid #8a2be2;
   border-radius: 50%;
   color: #8a2be2;
-  margin: 10px;
   padding: 10px;
-  text-align: center;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  cursor: pointer;
-  max-width: 100%;
-}
-#team .cony .conyBx a i:hover {
-  background-color: #fff;
+  margin-top: 10px;
   transition: 0.7s ease-in;
-  -webkit-transition: 0.7s ease-in;
-  -moz-transition: 0.7s ease-in;
-  -ms-transition: 0.7s ease-in;
-  -o-transition: 0.7s ease-in;
 }
+
+#team .cony .conyBx a i:hover {
+  background-color: #555;
+  color: #fff;
+  border: none;
+  transition: 0.7s ease-in;
+}
+
 /* Mobile responsiveness*/
 @media screen and (max-width: 991px) {
   nav {
@@ -471,6 +509,9 @@ section {
     text-align: left;
     display: none;
   }
+  nav .navLinks li a {
+    color: #fff;
+  }
   .menuToggle {
     position: relative;
     background: url(images/icons8-menu-100.png);
@@ -480,7 +521,7 @@ section {
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
-    background-color: #8a2be2;
+    border: 1px solid #000;
     border-radius: 50%;
   }
   .menuToggle.active {
@@ -489,7 +530,7 @@ section {
     background-position: center;
     background-repeat: no-repeat;
     cursor: pointer;
-    background-color: #8a2be2;
+    border: 1px solid #000;
     border-radius: 50%;
   }
   .navLinks.active {
@@ -497,7 +538,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(7, 7, 17);
+    background-color: #0f0e0e;
     position: fixed;
     flex-direction: column;
     /*height: calc(100% - 60px);
@@ -531,6 +572,7 @@ section {
   }
 
   #banner .row .col5 {
+    position: relative;
     width: 100%;
     margin: 10px 0;
   }
@@ -543,15 +585,7 @@ section {
     max-width: 100%;
   }
 
-  .col5Bx {
-    display: none;
-    left: 50%;
-    top: 75%;
-    transform: translate(-50%, -50%);
-  }
-
   #banner .row .col5 .imgBx {
-    width: 300px;
     height: 300px;
   }
   #banner .row .col5 p {
@@ -566,22 +600,19 @@ section {
     max-width: 100%;
     text-align: center;
   }
-
   #collection .collectan .collecBx {
     flex-direction: column;
-    margin: 20px 0;
   }
+
   #collection .pinky {
     font-size: 2em;
   }
 
-  #collection .collectan .collecBx .imgBx {
-    width: 120px;
-    height: 120px;
-    margin: 20px 40px;
-  }
   .pcak2 h2 {
     font-size: 15px;
+  }
+  #gall h2 {
+    font-size: 2em;
   }
   #partnership .party .partyBx {
     margin: 10px;
@@ -597,11 +628,9 @@ section {
     width: 100%;
     height: 100%;
   }
-  #collection .collectan {
-    margin-top: 0px;
-  }
-  #collection .collectan .collecBx {
-    margin: 60px 10px;
+
+  #team h2 {
+    font-size: 2em;
   }
 
   #team .cony {
@@ -610,5 +639,15 @@ section {
 
   #team .cony .conyBx {
     max-width: 100%;
+    margin: 10px;
+  }
+
+  #team .cony .conyBx .imgBx {
+    width: 90px;
+    height: 90px;
+  }
+
+  #team .cony .conyBx p {
+    font-size: 0.9em;
   }
 }
