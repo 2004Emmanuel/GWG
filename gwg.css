@@ -496,7 +496,31 @@ section {
   border: none;
   transition: 0.7s ease-in;
 }
-
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+    -webkit-transform: translateX(-100px);
+    -moz-transform: translateX(-100px);
+    -ms-transform: translateX(-100px);
+    -o-transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0 px);
+    -webkit-transform: translateX(0 px);
+    -moz-transform: translateX(0 px);
+    -ms-transform: translateX(0 px);
+    -o-transform: translateX(0 px);
+  }
+}
+#collection,
+#gall,
+#team .conyBx {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
 /* Mobile responsiveness*/
 @media screen and (max-width: 991px) {
   nav {
